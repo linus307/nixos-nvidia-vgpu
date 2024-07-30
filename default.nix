@@ -20,7 +20,7 @@ in
         version = "${vgpuVersion}";
 
         src = pkgs.fetchurl {
-          urls = "https://storage.googleapis.com/nvidia-drivers-us-public/GRID/vGPU17.0/NVIDIA-Linux-x86_64-${gridVersion}-grid.run";
+          url = "https://storage.googleapis.com/nvidia-drivers-us-public/GRID/vGPU17.0/NVIDIA-Linux-x86_64-${gridVersion}-grid.run";
           sha256 = "1qwrij3h3hbkwpdslpyp1navp9jz9ik0xx5k9ni4biafw4bv2702";
         };
 
