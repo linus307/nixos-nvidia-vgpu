@@ -10,12 +10,6 @@ in
   options = {
     hardware.nvidia.vgpu = {
       enable = lib.mkEnableOption "vGPU support";
-
-      unlock.enable = lib.mkOption {
-        default = false;
-        type = lib.types.bool;
-        description = "Unlock vGPU functionality for consumer grade GPUs";
-      };
     };
   };
 
