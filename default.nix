@@ -24,7 +24,9 @@ in
           sha256 = "1qwrij3h3hbkwpdslpyp1navp9jz9ik0xx5k9ni4biafw4bv2702";
         };
 
-        postInstall = postInstall + ''
+        postInstall = 
+        /* postInstall +  */
+        ''
           if [ -n "$bin" ]; then
               # Install the programs.
               for i in nvidia-gridd nvidia-topologyd; do
